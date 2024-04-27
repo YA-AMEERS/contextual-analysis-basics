@@ -123,11 +123,11 @@ By addressing these challenges, weighing the pros and cons, and implementing app
 Here are some potential measures taken to address the challenges and possible improvement approaches we can consider:
 
 1. **Performance Optimization**:
-   - The code appears to be using the `time.sleep()` function in certain places, which could be an attempt to introduce delays and prevent overwhelming external services or mitigating rate-limiting issues.
+   - We are currently using the `time.sleep()` function in certain places, which could be an attempt to introduce delays and prevent overwhelming external services or mitigating rate-limiting issues.
    - Improvement: Instead of using sleep delays, consider implementing a more robust rate-limiting mechanism or a queue system to manage the requests to external services.
 
 2. **Error Handling and Fallback Mechanisms**:
-   - The code includes try-except blocks in various places, such as when making Google searches or generating summaries with OpenAI GPT-3.5 Turbo. These blocks handle potential exceptions and provide fallback mechanisms to retry the operation after a certain delay.
+   - We includes try-except blocks in various places, such as when making Google searches or generating summaries with OpenAI GPT-3.5 Turbo. These blocks handle potential exceptions and provide fallback mechanisms to retry the operation after a certain delay.
    - Improvement: Consider implementing more sophisticated fallback mechanisms, such as retrying with an exponential backoff strategy or switching to alternative data sources or NLP models in case of persistent failures.
 
 3. **Caching**:
