@@ -1,5 +1,3 @@
-Sure, I can provide a comprehensive and professional README for your API documentation. Here's a detailed breakdown:
-
 # News Aggregation API
 
 This API is designed to query breaking news from various news outlets through Google, process the news articles, structure them, and store them in a database. The API uses natural language processing (NLP) techniques to extract relevant information from the news articles and categorize them based on their content.
@@ -54,10 +52,3 @@ The API does not expose any specific endpoints. Instead, it runs the `updateNews
 
 Once the API is running, it will automatically start querying and updating the news articles in the database. You can interact with the database directly using SQLAlchemy queries or through a separate application that consumes the data stored in the database.
 
-## Contributing
-
-Contributions are welcome! If you find any issues or want to add new features, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
